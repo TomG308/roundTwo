@@ -12,14 +12,16 @@ router.route('/add').post((req, res) => {
     const lastName = req.body.lastName
     const email = req.body.email
     const areaCode = req.body.areaCode
-    const phoneNumber = req.body.phoneNumber
+    const numberPrefix = req.body.numberPrefix
+    const subNumber = req.body.subNumber
 
     const newSupporters = new Supporters({
         firstName,
         lastName,
         email,
         areaCode,
-        phoneNumber,
+        numberPrefix,
+        subNumber,
     })
 
     newSupporters.save()
@@ -46,7 +48,8 @@ router.route('/update/:id').post((req, res) => {
             supporters.lastName = req.body.lastName
             supporters.email = req.body.email
             supporters.areaCode = req.body.areaCode
-            supporters.phoneNumber = req.body.phoneNumber
+            supporters.numberPrefix = req.body.numberPrefix
+            supporters.subNumber = req.body.subNumber
 
             supporters.save()
                 .then(() => res.json('Supporter updated')   )

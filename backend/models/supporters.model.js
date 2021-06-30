@@ -6,24 +6,33 @@ const supportersSchema = new Schema({
     firstName: {
         type: String,
         required: true,
+        trim: true,
     },
     lastName: {
         type: String,
-        required: true, 
+        required: true,
+        trim: true,
     },
     email: {
         type: String,
+        lowercase: true,
+        trim: true,
         required: true
     },
     areaCode: {
         type: Number,
         required: true,
-        // max: 3,
+        trim: true,
     },
-    phoneNumber: {
+    numberPrefix: {
         type: Number,
         required: true,
-        // max: 7,
+        trim: true,
+    },
+    subNumber: {
+        type: Number,
+        required: true,
+        trim: true,
     }
 }, {
     timestamps: true,

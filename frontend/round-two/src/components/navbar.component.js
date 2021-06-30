@@ -7,17 +7,20 @@ export default class Navbar extends Component {
         return (
             <nav className='navbar navbar-dark bg-dark navbar-expand-lg'>
                 <h1>h01 navbar</h1>
-                <Link to='/' className='navbar-brand'>Supporter tracker</Link>
+                <Link to='/' className='navbar-brand'>Home</Link>
                 <div className='collpase navbar-collapse'>
                 <ul className='navbar-nav mr-auto'>
                     <li className='navbar-item'>
-                    <Link to='/' className='nav-link'>Supporters</Link>
+                    <Link to='/about' className='nav-link'>About</Link>
                     </li>
                     <li className='navbar-item'>
-                    <Link to='create' className='nav-link'>Create supporter log</Link>
+                    <Link to='/events' className='nav-link'>Events</Link>
                     </li>
-                    <li>
-                    <Link to='/create' className='navbar-item' ></Link>
+                    <li className='navbar-item'>
+                    <Link to='/issues' className='nav-link'>Issues</Link>
+                    </li>
+                    <li className='navbar-item'>
+                    <Link to='/volunteer' className='nav-link'>Volunteer</Link>
                     </li>
                 </ul>
 
