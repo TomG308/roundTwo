@@ -10,6 +10,7 @@ import Events from './components/eventsComponent/events.component'
 import Issues from './components/issuesComponent/issues.component'
 import Volunteer from './components/volunteerComponent/volunteer.component'
 import Footer from './components/footerComponent/Footer.component'
+import ThankYou from './components/thankYou.Component.js/ThankYou.component'
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
       <Route path='/events' component={Events} />
       <Route path='/issues' component={Issues} />
       <Route path='/volunteer' component={Volunteer} />
-      
+      <Route path='/thankYou' component={ThankYou} />
       </div>
       </Router>
     <Footer />

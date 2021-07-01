@@ -86,7 +86,7 @@ export default class ContactForm extends Component {
         axios.post('http://localhost:5000/supporters/add', Supporters)
         .then(res => console.log(res.data))
 
-        // window.location = '/'
+        window.location = '/thankYou'
     }
 
     render() {
